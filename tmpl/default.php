@@ -20,8 +20,9 @@ if ($html5Mode) {
         <h2 class="text-center mb-5"><?php echo \JText::_('ACCOMMODATION_FEATURED_TITLE'); ?></h2>
       </div>
       <div class="row row-cards">
-        <?php foreach ($accommodations as $key => $accommodation) { ?>
-
+        <?php for ($i=0; $i < $amount; $i++) {
+            $accommodation = $accommodations[$i];
+        ?>
           <div class="col col-12 col-sm-6 col-md-3">
               <a href="<?php echo $link . $accommodation->slug; ?>" class="card card-activity">
                   <img class="card-img card-img-recranet" src="<?php echo 'https://recranet.imgix.net' . $accommodation->image ?> ">

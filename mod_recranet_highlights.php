@@ -12,6 +12,7 @@ defined('_JEXEC') or die;
 $org = (int) $params->get('organization');
 $lang = (string) $params->get('locale');
 $html5Mode = (boolean) $params->get('html5Mode');
+$amount = (int) $params->get('amount');
 
 $accommodations = file_get_contents('https://app.recranet.com/api/accommodations/?active=true&category=0&locale=' . $lang . '&organization=' . $org . '&public=true&tzoffset=120&featured=true');
 

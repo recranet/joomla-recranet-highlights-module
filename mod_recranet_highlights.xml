@@ -2,7 +2,7 @@
 <extension type="module" version="3.1" client="site" method="upgrade">
     <name>Recranet Uitgelicht</name>
     <author>Recranet</author>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <description>Een module om uitgelichte accommodaties te tonen</description>
     <files>
         <filename>mod_recranet_highlights.xml</filename>
@@ -31,6 +31,12 @@
                     type="number"
                     default=""
                     label="Organisatie ID"
+                    description="" />
+                <field
+                    name="amount"
+                    type="number"
+                    default=""
+                    label="Aantal uitgelicht"
                     description="" />
                 <field
                     name="html5Mode"
