@@ -31,7 +31,7 @@ if ($accommodations) {
             ?>
               <div class="col col-12 col-sm-6 col-md-3">
                   <a href="<?php echo $link . $accommodation->slug; ?>" class="card card-activity">
-                      <img class="card-img card-img-recranet" src="<?php echo 'https://recranet.imgix.net' . $accommodation->image . '?compress=auto' ?> ">
+                      <img class="card-img card-img-recranet" src="<?php echo 'https://recranet.imgix.net' . $accommodation->image . '?compress=auto&w=480' ?> ">
                       <span class="card-img-overlay h-100 d-flex flex-column justify-content-end">
                           <h3 class="card-title"><?php echo $accommodation->title ?></h3>
                       </span>
